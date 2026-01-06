@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools</title>
+  <meta name="description" content="Collection of developer tools and visualizers">
+  <meta name="theme-color" content="#0f0f23">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛠️</text></svg>">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #0f0f23;
+      color: #e0e0e0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .container {
+      max-width: 800px;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: #888;
+      font-size: 1.1rem;
+    }
+
+    .tools-grid {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .tool-card {
+      background: #1a1a2e;
+      border: 1px solid #2a2a4a;
+      border-radius: 12px;
+      padding: 1.5rem;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.2s ease;
+      display: block;
+    }
+
+    .tool-card:hover {
+      border-color: #6366f1;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(99, 102, 241, 0.15);
+    }
+
+    .tool-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .tool-icon {
+      font-size: 2rem;
+    }
+
+    .tool-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .tool-badge {
+      margin-left: auto;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      background: rgba(99, 102, 241, 0.2);
+      color: #818cf8;
+    }
+
+    .tool-description {
+      color: #888;
+      line-height: 1.6;
+    }
+
+    .tool-tags {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      padding: 0.25rem 0.5rem;
+      background: #2a2a4a;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      color: #aaa;
+    }
+
+    footer {
+      margin-top: 4rem;
+      text-align: center;
+      color: #555;
+      font-size: 0.875rem;
+    }
+
+    footer a {
+      color: #6366f1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🛠️ Tools</h1>
+      <p class="subtitle">Developer tools and visualizers</p>
+    </header>
+
+    <div class="tools-grid">
+      <!-- AlgoWalkthrough -->
+      <a href="/AlgoWalkthrough/" class="tool-card">
+        <div class="tool-header">
+          <span class="tool-icon">🧩</span>
+          <span class="tool-title">AlgoWalkthrough</span>
+          <span class="tool-badge">Live</span>
+        </div>
+        <p class="tool-description">
+          Interactive step-by-step visualizer for LeetCode algorithms. 
+          Learn Two Pointers, Sliding Window, and more with code execution highlighting.
+        </p>
+        <div class="tool-tags">
+          <span class="tag">SolidJS</span>
+          <span class="tag">Algorithms</span>
+          <span class="tag">LeetCode</span>
+          <span class="tag">Visualization</span>
+        </div>
+      </a>
+
+    </div>
+
+    <footer>
+      <p>Built with ❤️ by Kulbir · <a href="https://github.com/kulbir" target="_blank">GitHub</a></p>
+    </footer>
+  </div>
+</body>
+</html>
+
